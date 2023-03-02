@@ -33,7 +33,7 @@ loaded_model = load_model('advance_model.h5')
 
 app = Flask(__name__)
 
-@app.route('/prediction', methods=['POST'])
+@app.route('/', methods=['POST'])
 def prediction():
     phrase = request.form['phrase']
     sequence = Preprocess_Sentence(phrase)
