@@ -5,6 +5,9 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 import pickle
 
+nltk.download('punkt')
+nltk.download('stopwords')
+
 # Initialisation des stopwords /  words / lemmatization
 stopwords = nltk.corpus.stopwords.words('english') # Mots à supprimer
 words = set(nltk.corpus.words.words()) # Totalités des mots de la langue
